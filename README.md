@@ -1,2 +1,4 @@
-# BST
-binary search tree 
+A simple binary search tree
+
+#### Functionality
+- `.search()`
