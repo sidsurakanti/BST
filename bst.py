@@ -9,7 +9,7 @@ def search(root: BST, target):
     """
     Binary search algorithm.
     """
-	# target is not in the BST
+    # target is not in the BST
     if root is None:
         return None
 	# target found
