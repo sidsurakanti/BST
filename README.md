@@ -1,4 +1,7 @@
-A simple binary search tree
+A binary search tree
 
 #### Functionality
-- `.search()`
+- [x] `.search()`
+- [ ] `.inorder()`
+- [ ] `.insert()`
+- [ ] `.remove()`
