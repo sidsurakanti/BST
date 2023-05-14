@@ -4,7 +4,7 @@ class BST:
 		self.left = left
 		self.right = right
 		self.parent = parent
-
+    
 	def height(self, tree) -> int:
 		"""
   		Finds height of :param tree:
@@ -48,7 +48,6 @@ class BST:
 		traverse(self, res)
 		return res
 
-
 	def min(self):
 		"""
   		Returns minimum value in the BST
@@ -80,7 +79,7 @@ class BST:
   		:returns:
 			<BST>: if node that contains target value is found
 			NoneType: if node containing target value not found
-	    """
+	  	"""
 		# target is not in the BST
 		if self is None:
 			return None
@@ -99,7 +98,7 @@ class BST:
   		Enables object indexing. BST[i]
 
   		:params value: value to search for in BST
-		:returns: 
+		  :returns: 
   			<BST>: Node containing target value
   		"""
 		return repr(self._search(value))
@@ -110,8 +109,8 @@ class BST:
 	def __repr__(self):
 		return f"BST({self.inorder})"
 
-	
-# example binary tree for testing
+
+# Sample binary tree for testing
 root = BST(10)
 root.left = BST(5, parent=root)
 root.right = BST(15, parent=root)
