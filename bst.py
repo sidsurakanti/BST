@@ -34,6 +34,20 @@ class BST:
 		res = []
 		traverse(self, res)
 		return res
+	
+	@property
+	def preorder(self):
+		def traverse(node, res):
+		    if node:
+			res.append(node.val)
+			preorder(node.left, res)
+			preorder(node.right, res)
+		    return
+	
+		res = []
+		traverse(self, res)
+		return res
+
 
 	def min(self):
 		"""
