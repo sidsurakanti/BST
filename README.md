@@ -32,11 +32,13 @@ root.right.right = BST(20, parent=root.right)
 
 height = root.height(root)
 inorder = root.inorder
+preorder = root.preorder
 empty = root.is_empty
 min_val = root.min().value
 
 print(f"Height: {height}")
 print(f"Inorder Traversal: {inorder}")
+print(f"Preorder Traversal: {preorder}")
 print(f"Is empty: {empty}")
 print(f"Min value: {min_val}")
 print(root)
@@ -45,9 +47,10 @@ print(root[5])
 ```hs
 Height: 3
 Inorder Traversal: [2, 5, 7, 10, 12, 15, 20]
+Preorder Traversal: [10, 5, 2, 7, 15, 12, 20]
 Is empty: False
 Min value: 2
 2, 5, 7, 10, 12, 15, 20
-BST([2, 5, 7]
+BST([2, 5, 7])
 ```
 

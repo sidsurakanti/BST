@@ -38,12 +38,12 @@ class BST:
 	@property
 	def preorder(self):
 		def traverse(node, res):
-		    if node:
-			res.append(node.val)
-			preorder(node.left, res)
-			preorder(node.right, res)
-		    return
-	
+			if node:
+				res.append(node.value)
+				traverse(node.left, res)
+				traverse(node.right, res)
+				return
+
 		res = []
 		traverse(self, res)
 		return res
@@ -122,11 +122,13 @@ root.right.right = BST(20, parent=root.right)
 
 height = root.height(root)
 inorder = root.inorder
+preorder = root.preorder
 empty = root.is_empty
 min_val = root.min().value
 
 print(f"Height: {height}")
 print(f"Inorder Traversal: {inorder}")
+print(f"Preorder Traversal: {preorder}")
 print(f"Is empty: {empty}")
 print(f"Min value: {min_val}")
 print(root)
