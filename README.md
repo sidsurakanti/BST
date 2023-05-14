@@ -3,6 +3,7 @@ A binary search tree
 #### Functionality
 - [x] `.search()`
 - [x] `.height()`
-- [ ] `.inorder()`
+- [x] `.inorder`
+- [x] `.preorder`
 - [ ] `.insert()`
 - [ ] `.remove()`
