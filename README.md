@@ -1,3 +1,4 @@
+## Description
 A binary search tree
 
 #### Functionality
@@ -10,6 +11,11 @@ A binary search tree
 - [x] `.__getitem__()`
 - [ ] `.insert()`
 - [ ] `.remove()`
+
+### What I Learned
+- How binary search trees work
+- Applications of binary search trees
+- Implimenting a BST in python
 
 #### Usage
 ```md
